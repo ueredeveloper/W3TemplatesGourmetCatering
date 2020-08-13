@@ -1,0 +1,35 @@
+
+/* redimensionamento automatico da imagem */
+.header-image{
+    max-width:100%;
+    height:auto
+}
+.header-display-container{position:relative}
+.header-display-container:hover .header-display-hover{display:block}
+.header-display-container:hover span.header-display-hover{display:inline-block}
+.header-display-hover{display:none}
+.header-display-bottomleft{position:absolute;left:0;bottom:0}
+.header-display-bottomright{position:absolute;right:0;bottom:0}
+
+.header-padding-small{padding:4px 8px!important}
+.header-padding{padding:8px 16px!important}
+.header-padding-large{padding:12px 24px!important}
+.header-padding-16{padding-top:16px!important;padding-bottom:16px!important}
+.header-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.header-padding-32{padding-top:32px!important;padding-bottom:32px!important}
+.header-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.header-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+
+.header-opacity,.header-hover-opacity:hover{opacity:0.60}
+.header-opacity-off,.header-hover-opacity-off:hover{opacity:1}
+.header-opacity-max{opacity:0.25}
+.header-opacity-min{opacity:0.75}
+
+.header-xlarge{font-size:24px!important}
+.header-xxlarge{font-size:36px!important}
+.header-xxxlarge{font-size:48px!important}
+.header-jumbo{font-size:64px!important}
+.header-left-align{text-align:left!important}
+.header-right-align{text-align:right!important}
+.header-justify{text-align:justify!important}
+.header-center{text-align:center!important}
