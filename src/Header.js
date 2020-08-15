@@ -5,14 +5,14 @@ import './header.css';
 function Header() {
 
     const style = {
-        maxWidth:"2560px",
+        maxWidth:"1450px",
         minWidth:"500px",
     };
     return (
     <header className="header-display-container header-content header-wide" style={style} id="home">
-        <img className="header-image" src={backimage} alt="Hamburger Catering" width="2560" height="800"/>
+        <img className="header-image" src={backimage} alt="Hamburger Catering" width="1450" height="800"/>
             <div className="header-display-bottomleft header-padding-large header-opacity">
-                <h1 className="header-xxlarge">Le Catering</h1>
+                <h1 className="header-large">Le Catering</h1>
             </div>
     </header>
     );

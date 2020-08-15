@@ -5,3 +5,20 @@ footer {
   color: white;
   display:block;
 }
+
+.footer-center .footer-bar{display:inline-block;width:auto}
+.footer-center{text-align:center!important}
+.footer-text-green,.footer-hover-text-green:hover{color:#4CAF50!important}
+
+
+
+
+
+
+
+
+
+
+
+
+

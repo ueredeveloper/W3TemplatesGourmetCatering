@@ -1,43 +1,42 @@
-
-/** ABOUT 
-
+/*  clearfix: injetar conteúdo após os elementos com float e “limpar” a flutuação. 
+    Ver: https://www.origamid.com/codex/para-que-serve-o-clearfix/
+    Ver: https://8thlight.com/blog/assets/posts/2016-04-15-alleviate-frontend-dev-pains-with-flexbox/parent-collapses-clearfix-0f3263575d11cbb0c23593613ad8a95a59aef99f4952875c37d939471cc5e75e.gif
+    
 */
-.absec-row:after,.absec-row:before {
+.about-row:after,.about-row:before {
     content:"";
     display:table;
-    clear:both
+    clear:both;
 }
-/* padding: largura entre conteudo e borda */
-.absec-padding-64{
+/* ditancia conteudo/borda */
+.about-padding-64{
     padding-top:64px!important;
-    padding-bottom:64px!important
+    padding-bottom:64px!important;
 }
-/** IMAGE 
-    flotar e largura */
-.absec-col {
+/* este float deve ser visto junto com o clearfix */
+.about-col {
     float:left;
-    width:100%
+    width:100%;
 }
-/* CONTENT
-    largura */
-.absec-col.m6,.absec-half{
-    width:49.99999%
+/* largura das divs (imagem e texto) */
+@media (min-width:601px){
+    .about-col.m6 {width:39.99999%}
 }
-/*.absec-padding-large{padding:12px 24px!important}*/
+/* distancia conteudo/borda top left */
+.about-padding{padding:8px 16px!important}
 
-/* */
-.absec-hide-small{
-    display:none!important
+.about-padding-large{
+    padding:12px 24px!important
 }
-/* IMAGE 
-    arredondamento das bordas
-*/
-.absec-round{
-    border-radius:4px
+/* IMAGEM */
+@media (max-width:600px){
+    .about-hide-small{display:none!important}  
 }
-/* tamanho ajustavel a tela */
-.absec-image{
-    max-width:100%;
+/* arredondamento de bordas */
+.about-round {border-radius:4px}
+/* redimensionamento  */
+.about-image{
+    max-width:90%;
     height:auto
 }
 img{
@@ -47,49 +46,17 @@ a{
     color:inherit
 }
 /* opacidade da imagem */
-.absec-opacity-min{
-    opacity:0.75
-}
-
-/* CONTENT
-*/
-.absec-center {
-    display:inline-block;
-    width:auto
-}
+.about-opacity-min{opacity:0.75}
+/* centralizar titulo e subtitulo */
+.about-center{text-align:center!important}
 /* tamanho da fonte */
-.absec-large{
-    font-size:18px!important
-}
-/* cor da span */
-.absec-tag{
-    background-color:#000;
-    color:#fff;
-    display:inline-block;
-    padding-left:8px;
-    padding-right:8px;
-    text-align:center
-}
-.absec-light-grey {
-    color:#000!important;
-    background-color:#f1f1f1!important
-}
-.absec-text-grey,
-.absec-hover-text-grey:hover,
-.absec-text-gray,
-.absec-hover-text-gray:hover{
-    color:#757575!important
-}
-/*
-@media (max-width:992px) and (min-width:601px){
-  .absec-hide-medium{
-    display:none!important
-    }
-}*/
+.about-large{font-size:18px!important}
 
-@media only screen and (max-width: 700px) {
-  .absec-image {
-    display:none ;
-  }
+/* cor da fonte */
+.about-text-grey,.about-hover-text-grey:hover {color:#757575!important}
+
+/* em determinado largura, retirar texto, ver classe about-text-grey */
+@media (max-width:992px) and (min-width:601px){
+    .about-hide-medium{display:none!important}
 }
 

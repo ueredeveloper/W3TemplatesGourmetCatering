@@ -1,10 +1,21 @@
 import React from 'react';
-import AboutSection from './AboutSecton';
+import About from './About';
+import Menu from './Menu';
+import Contact from './Contact';
+
+const style = {
+    margin: "auto",
+    width: "60%",
+  }
 
 function Content() {
     return (
-        <div>
-            <AboutSection />
+        <div style={style}>
+            <About />
+            <hr />
+            <Menu />
+            <hr />
+            <Contact />
         </div>
     )
 }
